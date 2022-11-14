@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(128, 128, 128);
+}
+
+.content {
+  background-color: white;
+  width: 80%;
+  border-radius: 1.5rem;
+  margin: 3rem auto;
+  padding: 5rem 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+table {
+  margin-bottom: 3rem;
+}
+
+table td {
+  padding: 1rem 3rem;
+}
+
+thead {
+  background-color: purple;
+  color: white;
+}
+
+td {
+  padding: 0.5rem 3rem;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: rgb(200, 200, 200);
+}
+
+tbody tr:nth-child(2n + 1) {
+  background-color: rgb(160, 160, 160);
+}
+
+.btn {
+  padding: 2rem 8rem;
+  background-color: rgb(200, 200, 200);
+  border: 0;
+  border-radius: 1.5rem;
+}
+
+.btn:hover {
+  background-color: rgb(160, 160, 160);
+}
+
+.next {
+  font-family: "fontawesome";
+  font-size: 30px;
+  color: rgb(64, 64, 64);
+}
