@@ -4,15 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     <title>Contatti</title>
   </head>
   <body>
-    <h2>Contattaci</h2>
-    <form action="#" method="post">
-      <p><input type="text" name="username" placeholder="Username" /></p>
-      <p><input type="email" name="email" placeholder="Email" /></p>
-      <h3>Cosa vuoi dirci?</h3>
-      <p><textarea name="mex" cols="30" rows="10"></textarea></p>
-    </form>
+    <!-- Menu -->
+    <nav>
+      <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/prodotti.html">Prodotti</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/contact.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <!-- Body -->
+    <div class="popular">
+      <div class="content contact">
+        <form action="grazie.html" method="post">
+          <div class="form-input">
+            <input type="text" name="nome" placeholder="Inserisci il tuo nome" />
+          </div>
+          <div class="form-input">
+            <input type="email" name="email" placeholder="Inserisci la tua email" />
+          </div>
+          <div class="form-input">
+            <input type="password" name="password" placeholder="Inserisci la tua password" />
+          </div>
+          <div class="form-input">
+            <textarea name="mex" id="mex"></textarea>
+          </div>
+          <div class="form-input">
+            <select name="professione" id="professione">
+              <option value="studente">studente</option>
+              <option value="docente">docente</option>
+              <option value="liberoProfessionista">libero professionista</option>
+              <option value="disoccupato">disoccupato</option>
+            </select>
+          </div>
+          <div class="form-input">
+            <input type="radio" name="eta" id="minorenne" /><label for="minorenne">minorenne</label>
+            <input type="radio" name="eta" id="maggiorenne" /><label for="maggiorenne"
+              >maggiorenne</label
+            >
+          </div>
+          <div class="form-input">
+            <input type="checkbox" name="sport" id="sport" /><label for="sport">sport</label>
+            <input type="checkbox" name="viaggi" id="viaggi" /><label for="viaggi">viaggi</label>
+          </div>
+          <div class="form-input">
+            <button type="submit" class="btn">Invia</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="logo">
+        <img src="https://source.unsplash.com/2IvGCJMK96M/320x320" alt="logo" />
+      </div>
+      <p class="email"><a href="mailto: info@miele.it" title="email">info@miele.it</a></p>
+    </div>
   </body>
 </html>

@@ -1,16 +1,21 @@
 * {
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   background: hsl(0, 0%, 80%);
   margin: 0;
+  font-size: 18px;
   font-weight: 400;
 }
 
 p {
   line-height: 1.5;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .header {
@@ -68,6 +73,7 @@ h2,
 h3 {
   font-size: 46px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .prodotti {
@@ -101,11 +107,15 @@ h3 {
 .info {
   background: hsl(30, 80%, 45%);
   color: hsl(0, 0%, 99%);
+  text-align: center;
+  padding: 50px;
 }
 
 .info a {
   text-decoration: none;
-  color: hsl(0, 0%, 95%);
+  color: hsl(30, 80%, 45%);
+  background-color: hsl(0, 0%, 99%);
+  padding: 10px 30px;
 }
 
 .info a:hover {
@@ -119,17 +129,80 @@ a[title="email"] {
 
 /* left / right */
 
-.popular_2 {
-  background: hsl(0, 0%, 99%);
-  margin: 50px auto;
-  padding: 50px;
-  width: 80%;
-  border-radius: 30px;
+.popular:last-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.right {
-  text-align: end;
+.popular:last-child .right {
+  width: 75%;
+}
+
+.popular:last-child .right .text {
+  color: hsl(0, 0%, 25%);
+}
+
+/* Footer */
+
+.footer {
+  background-color: hsl(30, 80%, 45%);
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .logo {
+  height: 320px;
+}
+
+/* CONTACT */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  color: hsl(30, 80%, 45%) !important;
+  padding: 10px;
+  width: 80%;
+  font-size: 26px;
+}
+
+.form-input {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.form-input textarea {
+  height: 300px;
+  resize: none;
+}
+
+.form-input select {
+  text-transform: capitalize;
+}
+
+/* .form-input option:hover {
+  background: red;
+} */
+
+.form-input input[type="radio"], input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  accent-color: hsl(30, 80%, 45%);
+}
+
+.form-input label {
+  text-transform: capitalize;
+}
+
+.form-input .btn {
+  background-color: hsl(30, 80%, 45%);
+  color: hsl(0, 0%, 99%);
+  border: none;
+  margin: 30px 0;
+  padding: 20px 40px;
 }
