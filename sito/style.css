@@ -8,14 +8,14 @@
 body {
   background: hsl(0, 0%, 80%);
   margin: 0;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 
 p {
   line-height: 1.5;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 1.8rem;
+  margin-bottom: 1.25rem;
 }
 
 .header {
@@ -26,16 +26,23 @@ p {
   background-position: center center;
 }
 
+img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
 /* menu */
 
 nav {
   background: hsl(30, 80%, 45%);
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 .menu {
   margin: 0;
-  padding: 10px;
+  padding: 0.5rem;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -43,7 +50,7 @@ nav {
 
 .menu li {
   list-style: none;
-  padding: 10px 20px;
+  padding: 0.5rem 1.25rem;
 }
 
 .menu li a {
@@ -64,58 +71,58 @@ nav {
 .popular {
   background-color: hsl(0, 0%, 99%);
   width: 80%;
-  margin: 50px auto;
-  padding: 50px;
-  border-radius: 30px;
+  margin: 3rem auto;
+  padding: 3rem;
+  border-radius: 1.8rem;
 }
 
 h2,
 h3 {
-  font-size: 46px;
+  font-size: 2.8rem;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
 }
 
 .prodotti {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .prodotto {
   object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .prodotto a {
   color: hsl(30, 80%, 45%);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
 }
 
-/* .prodotto a img:hover {
-  outline: 1px solid hsl(30, 80%, 45%);
-} */
-
 /* info */
 
 h3 {
-  font-size: 38px;
+  font-size: 2rem;
 }
 
 .info {
   background: hsl(30, 80%, 45%);
   color: hsl(0, 0%, 99%);
   text-align: center;
-  padding: 50px;
+  padding: 3rem;
 }
 
 .info a {
   text-decoration: none;
   color: hsl(30, 80%, 45%);
   background-color: hsl(0, 0%, 99%);
-  padding: 10px 30px;
+  padding: 0.6rem 1.8rem;
 }
 
 .info a:hover {
@@ -129,17 +136,17 @@ a[title="email"] {
 
 /* left / right */
 
-.popular:last-child {
+.popular.popular_text {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.popular:last-child .right {
+.popular.popular_text .right {
   width: 75%;
 }
 
-.popular:last-child .right .text {
+.popular.popular_text .right .text {
   color: hsl(0, 0%, 25%);
 }
 
@@ -147,14 +154,14 @@ a[title="email"] {
 
 .footer {
   background-color: hsl(30, 80%, 45%);
-  padding: 30px 0;
+  padding: 1.8rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .footer .logo {
-  height: 320px;
+  height: 20rem;
 }
 
 /* CONTACT */
@@ -165,18 +172,18 @@ input[type="password"],
 textarea,
 select {
   color: hsl(30, 80%, 45%) !important;
-  padding: 10px;
+  padding: 0.6rem;
   width: 80%;
-  font-size: 26px;
+  font-size: 1.6rem;
 }
 
 .form-input {
   text-align: center;
-  margin: 10px 0;
+  margin: 0.6rem 0;
 }
 
 .form-input textarea {
-  height: 300px;
+  height: 18.75rem;
   resize: none;
 }
 
@@ -184,13 +191,10 @@ select {
   text-transform: capitalize;
 }
 
-/* .form-input option:hover {
-  background: red;
-} */
-
-.form-input input[type="radio"], input[type="checkbox"] {
-  width: 25px;
-  height: 25px;
+.form-input input[type="radio"],
+input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
   vertical-align: middle;
   accent-color: hsl(30, 80%, 45%);
 }
@@ -203,6 +207,58 @@ select {
   background-color: hsl(30, 80%, 45%);
   color: hsl(0, 0%, 99%);
   border: none;
-  margin: 30px 0;
-  padding: 20px 40px;
+  margin: 1.8rem 0;
+  padding: 1.25rem 2.5rem;
+}
+
+/* Product */
+
+.prodotto .scopri {
+  text-decoration: none;
+  background-color: hsl(30, 80%, 45%);
+  color: hsl(0, 0%, 99%);
+  padding: 0.6rem 1.8rem;
+  margin: 1.8rem 0;
+}
+
+.prodotto .scopri:hover {
+  color: hsl(0, 0%, 80%);
+}
+
+/* miele */
+
+.popular_miele {
+  display: grid;
+  grid-template-areas: "left left left right";
+}
+
+.popular_miele .left {
+  grid-area: "left";
+  position: relative;
+}
+
+.popular_miele .right {
+  grid-area: "right";
+}
+
+.popular_miele .img_prodotto {
+  width: 80%;
+}
+
+.popular_miele .thumbnail {
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+}
+
+.popular .left .divider{
+  content: "";
+  background-color: hsl(30, 80%, 45%);
+  width: 5px;
+  border-radius: 1.8rem;
+  height: 95%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 85%;
 }
