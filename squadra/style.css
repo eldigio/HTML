@@ -6,12 +6,15 @@
 
 body {
   min-height: 100vh;
+  font-family: Helvetica, sans-serif;
 }
 
 img {
   max-width: 100%;
   max-height: 100%;
 }
+
+/* Header */
 
 .banner {
   width: 100%;
@@ -28,25 +31,37 @@ img {
   margin-inline-start: 2rem;
 }
 
-.banner .menu {
-  margin-inline-end: 2rem;
-  margin-block-start: 3em;
+.menu {
+  display: grid;
+  place-items: center;
+  background-color: hsl(100, 40%, 50%);
+  padding-block: 2rem;
 }
 
-.banner .menu ul {
+.menu ul {
   list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 
-.banner .menu li a {
+.menu a {
   text-decoration: none;
-  font-size: 20px;
   text-transform: uppercase;
   color: white;
-  padding: 1em;
-  border-radius: 1em;
+  padding-inline: 2rem;
+  padding-block: 1.25rem;
+  border-radius: 1rem;
   transition: background-color 0.3s ease-in-out;
 }
 
-.banner .menu li a:hover {
-  background-color: hsl(100, 30%, 40%);
+.menu a:hover {
+  background-color: hsl(220, 50%, 50%);
+}
+
+/* Main */
+
+.main_content {
+  width: 80%;
+  background-color: white;
+  margin-inline: auto;
 }
