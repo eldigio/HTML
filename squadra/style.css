@@ -14,6 +14,14 @@ img {
   max-height: 100%;
 }
 
+section {
+  margin-bottom: 3rem;
+}
+
+p {
+  max-width: 100%;
+}
+
 /* Header */
 
 .banner {
@@ -64,4 +72,164 @@ img {
   width: 80%;
   background-color: white;
   margin-inline: auto;
+  text-align: center;
+}
+
+.main_content .title {
+  margin-block: 3rem;
+  text-align: center;
+}
+
+.main_content .news_grid {
+  display: flex;
+  gap: 2%;
+}
+
+.main_content .news_grid .news {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_content .news_grid .news a {
+  text-decoration: none;
+  color: black;
+}
+
+.main_content .news_grid .news a:hover {
+  color: hsl(220, 50%, 50%);
+  text-decoration: underline;
+}
+
+.main_content .news_grid .news a:visited {
+  color: blueviolet;
+}
+
+.main_content .btn {
+  text-decoration: none;
+  color: black;
+  padding: 1.25rem 5rem;
+  background-color: hsl(220, 50%, 50%);
+  border-radius: 1rem;
+  transition: background-color, padding 0.3s ease-in-out;
+}
+
+.main_content .btn:hover {
+  background-color: hsl(220, 50%, 55%);
+  padding: 1.25rem 5.5rem;
+}
+
+/* round */
+
+.score_section {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+}
+
+.score_section .round {
+  width: 72%;
+}
+
+.score_section .round table {
+  width: 100%;
+}
+
+.score_section .round thead tr td {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.score_section .round tbody tr td:first-child {
+  font-size: 1.25rem;
+}
+
+.score_section .round tbody tr:nth-child(2n) {
+  background-color: hsl(0, 0%, 65%);
+}
+
+.score_section .round tbody tr:nth-child(2n + 1) {
+  background-color: hsl(0, 0%, 75%);
+}
+
+.score_section .next_round {
+  width: 25%;
+  line-height: 2;
+  text-align: center;
+}
+
+/* Footer */
+
+.main_footer {
+  background-color: hsl(100, 40%, 50%);
+  text-align: center;
+  padding: 5rem 0;
+  margin-block-start: 4rem;
+}
+
+.main_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main_footer a {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  text-decoration: none;
+}
+
+.main_footer a i {
+  color: black;
+  font-size: 2rem;
+}
+
+/* CLASSIFICA */
+/* Main */
+
+.main_content form {
+  margin-block: 2rem;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+}
+
+.main_content form .form-control {
+  width: 32rem;
+}
+
+.main_content form .form-control * {
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  background-color: hsl(220, 50%, 50%);
+  color: white;
+}
+
+.main_content form .form-control input[type="text"],
+.main_content form .form-control input[type="email"],
+.main_content form .form-control textarea,
+.main_content form .form-control select {
+  padding: 0.5rem 1rem;
+}
+
+.main_content form .form-control input[type="text"]::placeholder,
+.main_content form .form-control input[type="email"]::placeholder {
+  color: white;
+}
+
+.main_content form .form-control input[type="submit"] {
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.main_content form .form-control input[type="submit"]:hover {
+  background-color: hsl(100, 40%, 50%);
+  cursor: pointer;
 }
